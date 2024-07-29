@@ -1,332 +1,0 @@
-=~=~=~=~=~=~=~=~=~=~=~= MobaXterm log 2024.07.04 15:24:00 =~=~=~=~=~=~=~=~=~=~=~=
-    
-                      MobaXterm Personal Edition v24.1                  
-                   (SSH client, X server and network tools)               
-                                                                          
-      SSH session to chenjunhui@192.168.1.10                             
-        Direct SSH      :                                               
-        SSH compression :                                               
-        SSH-browser     :                                               
-        X11-forwarding  :    (remote display is forwarded through SSH)  
-                                                                          
-      For more info, ctrl+click on help or visit our website.            
-    
-
-Welcome to Ubuntu 22.04 LTS (GNU/Linux 5.4.0-162-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-
-  System information as of Thu Jul  4 07:34:05 AM UTC 2024
-
-  System load:              3.40234375
-  Usage of /:               75.3% of 97.87GB
-  Memory usage:             28%
-  Swap usage:               100%
-  Temperature:              61.0 C
-  Processes:                1141
-  Users logged in:          4
-  IPv4 address for docker0: 172.17.0.1
-  IPv4 address for eno8303: 192.168.1.10
-  IPv6 address for eno8303: 240e:3b3:3a92:8ef0:ee2a:72ff:fe10:9aac
-
- * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
-   just raised the bar for easy, resilient and secure K8s cluster deployment.
-
-   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
-
-28 updates can be applied immediately.
-To see these additional updates run: apt list --upgradable
-
-
-17 updates could not be installed automatically. For more details,
-see /var/log/unattended-upgrades/unattended-upgrades.log
-
-*** System restart required ***
-Last login: Thu Jul  4 07:32:30 2024 from 192.168.1.251
-[chenjunhui@ubuntu ~]$ /szrmyy/Drwang/scRNA/chenjunhui//szrmyy/Drwang/scRNA/chenjunhui/
-cd -- /szrmyy/Drwang/scRNA/chenjunhui/
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui]$ ls
-bin                                      P00010_Drzhang_proteome20240130  P00015_LiverCancer
-P00010_DrLuo_proteome                    P00010_Drzhang_proteome20240418  P00016_liver_Chen
-P00010_DrLuo_proteome20230916_Autophagy  P00010_LuoZhang_proteome         P00017_liver_INH
-P00010_DrLuo_proteome20240110_Proteome   P00011_DrCai                     P00018_APAP
-P00010_Drzhang                           P00012_Drluo                     P00018_testis
-P00010_Drzhang_proteome                  P00013_Dryang                    proj.rdata
-P00010_Drzhang_proteome20230619          P00014_multi-species_kindey
-P00010_Drzhang_proteome20231114          P00015_Drsun
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui]$ /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui]$ /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui]$ /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui]$ /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis
-cd -- /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls
-Ctr1.DF.cowplot.pdf  Ctr2.rds             getRun.py              RIF369_DF.rds          RIF371.tsne.DF.pdf
-Ctr1_DF.rds          Ctr2.tsne.DF.pdf     nohup.out              RIF369.DF.VlnPlot.pdf  RIF371.umap.DF.pdf
-Ctr1.DF.VlnPlot.pdf  Ctr2.umap.DF.pdf     RIF368.DF.cowplot.pdf  RIF369.rds             RIFIntegration.R
-Ctr1.rds             Ctr3.DF.cowplot.pdf  RIF368_DF.rds          RIF369.tsne.DF.pdf     Rplots.pdf
-Ctr1.tsne.DF.pdf     Ctr3_DF.rds          RIF368.DF.VlnPlot.pdf  RIF369.umap.DF.pdf     runSampleQC.R
-Ctr1.umap.DF.pdf     Ctr3.DF.VlnPlot.pdf  RIF368.rds             RIF371.DF.cowplot.pdf
-Ctr2.DF.cowplot.pdf  Ctr3.rds             RIF368.tsne.DF.pdf     RIF371_DF.rds
-Ctr2_DF.rds          Ctr3.tsne.DF.pdf     RIF368.umap.DF.pdf     RIF371.DF.VlnPlot.pdf
-Ctr2.DF.VlnPlot.pdf  Ctr3.umap.DF.pdf     RIF369.DF.cowplot.pdf  RIF371.rds
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ vim  runSampleQC.RrunSampleQC.R
-"runSampleQC.R" 399L, 17251B  zz           dev.off()pdf( "Ctr3.umap.DF.pdf" )DimPlot( object = train, reduction="umap", label = T )
-dev.off()
-
-# save Seurat object
-saveRDS( train, file = "./Ctr3_DF.rds" )Sys.time()
-RIF368 <- Read10X(data.dir = "/data01/Rawdata/data/P00018_APAP_LP/01.QCBatch/Cellranger/RIF368/outs/filtered_feature__bc_matrix")
-Sys.time()
-
-RIF368 <- CreateSeuratObject(counts =RIF368,  project = "RIF368", min.cells = 3, min.features = 200)
-RIF368[["percent.mt"]] <- PercentageFeatureSet(RIF368, pattern = "^mt-")
-VlnPlot( RIF368, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3 )
-RIF368 <- subset(RIF368, subset = nFeature_RNA > 200 & nFeature_RNA < 4500 & nCount_RNA > 500 & nCount_RNA < 15000 &  percent.mt < 15)
-RIF368 <- NormalizeData(RIF368, assay = "RNA", normalization.method = "LogNormalize", scale.factor = 10000 )
-RIF368 <- FindVariableFeatures(RIF368, selection.method = "vst", nfeatures = 2000, verbose = FALSE)
-RIF368 <- ScaleData( RIF368, features=rownames(RIF368) )
-RIF368 <- RunPCA( object=RIF368, features=VariableFeatures(RIF368), npcs=20 )
-RIF368 <- FindNeighbors(RIF368, dim=1:20)
-RIF368 <- FindClusters(RIF368, resolution = 0.3)
-RIF368 <- RunTSNE( object = RIF368, dims=1:20 )
-RIF368 <- RunUMAP( object = RIF368, dims = 1:20 )
-#DimPlot( object = RIF368, reduction="umap" )205,151%~@k   4~@k   3~@k   4~@k   5g gg  library(Seurat)
-setwd("/szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis")
-
-
-Sys.time()
-Ctr1 <- Read10X(data.dir = "/data01/Rawdata/data/P00018_APAP_LP/01.QCBatch/Cellranger/Ctr1/outs/filtered_feature_bc_mmatrix")
-Sys.time()
-
-Ctr1 <- CreateSeuratObject(counts =Ctr1,  project = "Ctr1", min.cells = 3, min.features = 200)
-Ctr1[["percent.mt"]] <- PercentageFeatureSet(Ctr1, pattern = "^mt-")
-VlnPlot( Ctr1, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3 )
-Ctr1 <- subset(Ctr1, subset = nFeature_RNA > 200 & nFeature_RNA < 4500 & nCount_RNA > 500 & nCount_RNA < 15000 & perccent.mt < 15)
-Ctr1 <- NormalizeData(Ctr1, assay = "RNA", normalization.method = "LogNormalize", scale.factor = 10000 )
-Ctr1 <- FindVariableFeatures(Ctr1, selection.method = "vst", nfeatures = 2000, verbose = FALSE)
-Ctr1 <- ScaleData( Ctr1, features=rownames(Ctr1) )
-Ctr1 <- RunPCA( object=Ctr1, features=VariableFeatures(Ctr1), npcs=20 )
-Ctr1 <- FindNeighbors(Ctr1, dim=1:20)
-Ctr1 <- FindClusters(Ctr1, resolution = 0.3)
-Ctr1 <- RunTSNE( object = Ctr1, dims=1:20 )
-Ctr1 <- RunUMAP( object = Ctr1, dims = 1:20 )
-DimPlot( object = Ctr1, reduction="umap" )
-saveRDS( Ctr1, file = "./Ctr1.rds" )
-
-##  remove doubletfinder
-library(DoubletFinder)
-pcaN <- 20
-train <- Ctr1
-DoubletRate <- 0.0751,1Top::q![chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ lss  ls  /data01/Rawdata/data/P00018_APAP_LP/01.QCBatch/Cellranger/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ /data01/Rawdata/data/P00018_APAP_LP/01.QCBatch/Cellranger/
-Ctr1  Ctr2  Ctr3  PZF375  PZF376  PZF377  Report  RIF368  RIF369  RIF371  run.sh  samples.txt
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls  /data01/Rawdata/data/P00018_APAP_LP/01.QCBatch/Cellranger/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ /data01/Rawdata/data/P00018_APAP_LP/01.QCBatch/Cellranger/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$  /data01/Rawdata/data/P018_APAP_LP/01.QCBatch/Cellranger/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$  /data01/Rawdata/data/P0018_APAP_LP/01.QCBatch/Cellranger/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ l /data01/Rawdata/data/P0018_APAP_LP/01.QCBatch/Cellranger/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ l /data01/Rawdata/data/P018_APAP_LP/01.QCBatch/Cellranger/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$  /data01/Rawdata/data/P00018_APAP_LP/01.QCBatch/Cellranger/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ 
-
-total 56
-drwxr-xr-x 9 chenjunhui scRNA 4096 Jul  2 02:48 ./
-drwxr-xr-x 4 chenjunhui scRNA 4096 Jun 18 01:38 ../
-lrwxrwxrwx 1 chenjunhui scRNA   70 Jul  2 02:48 Ctr1 -> /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr1/
-lrwxrwxrwx 1 chenjunhui scRNA   70 Jul  2 02:48 Ctr2 -> /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr2/
-lrwxrwxrwx 1 chenjunhui scRNA   70 Jul  2 02:48 Ctr3 -> /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr3/
-drwxr-xr-x 3 chenjunhui scRNA 4096 Jul  2 02:01 PZF375/
-drwxr-xr-x 3 chenjunhui scRNA 4096 Jul  2 02:01 PZF376/
-drwxr-xr-x 3 chenjunhui scRNA 4096 Jul  2 02:01 PZF377/
-drwxr-xr-x 2 chenjunhui scRNA 4096 Jul  2 02:06 Report/
-drwxr-xr-x 3 chenjunhui scRNA 4096 Jul  2 02:01 RIF368/
-drwxr-xr-x 3 chenjunhui scRNA 4096 Jul  2 02:01 RIF369/
-drwxr-xr-x 3 chenjunhui scRNA 4096 Jul  2 02:01 RIF371/
--rw-r--r-- 1 chenjunhui scRNA  314 Jun 20 06:43 run.sh
--rw-r--r-- 1 chenjunhui scRNA   42 Jun 20 06:42 samples.txt
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr1/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr1/
-Ctr1.mri.tgz  outs
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr1/
-Clean  Ctr2  CtrlSamples.txt  INH2  nohup.out  runINH.sh    runINH.sh.o  run.sh.e  samples.txt
-Ctr1   Ctr3  INH1             INH3  Report     runINH.sh.e  run.sh       run.sh.o
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr1Ctr1
-Ctr1.mri.tgz  outs
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr12
-Ctr2.mri.tgz  outs
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr23
-Ctr3.mri.tgz  outs
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/Ctr3
-Clean  Ctr2  CtrlSamples.txt  INH2  nohup.out  runINH.sh    runINH.sh.o  run.sh.e  samples.txt
-Ctr1   Ctr3  INH1             INH3  Report     runINH.sh.e  run.sh       run.sh.o
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/CleanClean
-INH1  INH2  INH3
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger/CleanCtr321
-cellRenger  fastp
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/fastp/
-Ctrl1  Ctrl2  Ctrl3  CtrlFastq  INH1  INH2  INH3  pipe.sh
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/fastp/Ctrl3Ctrl3
-Ctr3_H7C33DSX2_L3  Ctr3_H7C33DSX2_L4
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/fastp/Ctrl3
-Ctrl1  Ctrl2  Ctrl3  CtrlFastq  INH1  INH2  INH3  pipe.sh
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/fastp/pipe.sh [chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$    /szrmyy/Drwang/scRNA/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$    /szrmyy/Drwang/scRNA/c[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ c   /szrmyy/Drwang/scRNA/c[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ a   /szrmyy/Drwang/scRNA/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ t   /szrmyy/Drwang/scRNA[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$  /szrmyy/Drwang/scRN[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ 
-
-ls  /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/INH*/*R1_00*.fastq.gz  |  while read dd; do fq=`basename  $dd "_R1_001.fastq.gz"`;dir=`basename  $dd  "_1.fq.gz" | cut -d "_"  -f 1`; echo  /szrmyy/Drwang/scRNA/chenjunhui/bin/fastp   -i  /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/$dir/${fq}_R1_001.fastq.gz    -I  /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/$dir/${fq}_R2_001.fastq.gz    -o  ${fq}_R1_001.fastq.gz   -O  ${fq}_R2_001.fastq.gz      -q    15   -u 20   -l  140 >$dir/$dir.sh; done
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/
-B7CKO1  B7CKO3  FX6KO2  MD5.txt        PLN1  PLN3  PWT2  Runid_finish.txt
-B7CKO2  FX6KO1  FX6KO3  MD5.txt.check  PLN2  PWT1  PWT3
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/INH*/*R1_00*.fastq.gzINH*/*R1_00*.fastq.gz
-ls: cannot access '/szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/INH*/*R1_00*.fastq.gz': No such file or directory
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/INH*/*R1_00*.fastq.gz
-20231225
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$    /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$    /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ l   /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ l   /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ 
-
-total 8
-drwxr-xr-x 2 chenjunhui scRNA 4096 Jan  1  2024 ./
-drwxr-xr-x 4 chenjunhui scRNA 4096 Jan  1  2024 ../
-lrwxrwxrwx 1 chenjunhui scRNA   42 Jan  1  2024 20231225 -> /data01/Rawdata/data/Chenjh_liver/20231225/
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /data01/Rawdata/data/Chenjh_liver/20231225/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ /data01/Rawdata/data/Chenjh_liver/20231225/
-B7CKO1  B7CKO3  FX6KO2  MD5.txt        PLN1  PLN3  PWT2  Runid_finish.txt
-B7CKO2  FX6KO1  FX6KO3  MD5.txt.check  PLN2  PWT1  PWT3
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls   /data01/Rawdata/data/Chenjh_liver/20231225/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ 
-
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ls
-Ctr1.DF.cowplot.pdf  Ctr2.rds             getRun.py              RIF369_DF.rds          RIF371.tsne.DF.pdf
-Ctr1_DF.rds          Ctr2.tsne.DF.pdf     nohup.out              RIF369.DF.VlnPlot.pdf  RIF371.umap.DF.pdf
-Ctr1.DF.VlnPlot.pdf  Ctr2.umap.DF.pdf     RIF368.DF.cowplot.pdf  RIF369.rds             RIFIntegration.R
-Ctr1.rds             Ctr3.DF.cowplot.pdf  RIF368_DF.rds          RIF369.tsne.DF.pdf     Rplots.pdf
-Ctr1.tsne.DF.pdf     Ctr3_DF.rds          RIF368.DF.VlnPlot.pdf  RIF369.umap.DF.pdf     runSampleQC.R
-Ctr1.umap.DF.pdf     Ctr3.DF.VlnPlot.pdf  RIF368.rds             RIF371.DF.cowplot.pdf
-Ctr2.DF.cowplot.pdf  Ctr3.rds             RIF368.tsne.DF.pdf     RIF371_DF.rds
-Ctr2_DF.rds          Ctr3.tsne.DF.pdf     RIF368.umap.DF.pdf     RIF371.DF.VlnPlot.pdf
-Ctr2.DF.VlnPlot.pdf  Ctr3.umap.DF.pdf     RIF369.DF.cowplot.pdf  RIF371.rds
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/04.RIF_PZF/01.analysis]$ ../../
-cd -- ../../
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH]$ lks
-Command 'lks' not found, did you mean:
-  command 'les' from deb atm-tools (1:2.5.1-4build2)
-  command 'sks' from deb sks (1.1.6+git20210302.c3ba6d5a-4)
-  command 'ls' from deb coreutils (8.32-4.1ubuntu1)
-  command 'lksh' from deb mksh (59c-16)
-  command 'lvs' from deb lvm2 (2.03.11-2.1ubuntu4)
-  command 'lrs' from deb lrslib (0.71a-1)
-Try: apt install <deb name>
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH]$ ls
-00.data  01.QC  02.analysis  02.analysisUpdate  03.Cellchat  04.RIF_PZF  bin
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH]$ 00.data/
-cd -- 00.data/
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ls
-1.limma_Probe1vsComp.xls  fastq  gmt  INH1  INH2  INH3  LayerGenes_41586_2017_BFnature21065_MOESM62_ESM.csv
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ll
-total 1616
-drwxr-xr-x 3 chenjunhui scRNA    4096 Apr 10 02:16 ./
-drwxr-xr-x 9 chenjunhui scRNA    4096 Jul  2 01:57 ../
-lrwxrwxrwx 1 chenjunhui scRNA     121 Mar 17 11:48 1.limma_Probe1vsComp.xls -> /szrmyy/Drwang/scRNA/chenjunhui/P00010_DrLuo_proteome/03.analysisINH_Deconvolution/targetProtein/1.limma_Probe1vsComp.xls
-lrwxrwxrwx 1 chenjunhui scRNA      43 Apr 10 02:15 fastq -> /data01/Rawdata/data/P00017_liver_INH/fastq/
-drwxr-xr-x 2 chenjunhui scRNA    4096 Mar 25 13:19 gmt/
-lrwxrwxrwx 1 chenjunhui scRNA      42 Apr 10 02:15 INH1 -> /data01/Rawdata/data/P00017_liver_INH/INH1/
-lrwxrwxrwx 1 chenjunhui scRNA      42 Apr 10 02:16 INH2 -> /data01/Rawdata/data/P00017_liver_INH/INH2/
-lrwxrwxrwx 1 chenjunhui scRNA      42 Apr 10 02:16 INH3 -> /data01/Rawdata/data/P00017_liver_INH/INH3/
--rw-r--r-- 1 chenjunhui scRNA 1635871 Mar 21 14:21 LayerGenes_41586_2017_BFnature21065_MOESM62_ESM.csv
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ls   /data01/Rawdata/data/P00017_liver_INH/INH1/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ /data01/Rawdata/data/P00017_liver_INH/INH1/
-INH1_S0_L000_R1_000.fastq.gz  INH1_S0_L000_R2_000.fastq.gz
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ls  /data01/Rawdata/data/P00017_liver_INH/INH2/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ /data01/Rawdata/data/P00017_liver_INH/INH2/
-INH2_S6_L004_R1_001.fastq.gz  INH2_S6_L004_R2_001.fastq.gz
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ls
-1.limma_Probe1vsComp.xls  fastq  gmt  INH1  INH2  INH3  LayerGenes_41586_2017_BFnature21065_MOESM62_ESM.csv
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ls    /data01/Rawdata/data/P00017_liver_INH/INH3/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ /data01/Rawdata/data/P00017_liver_INH/INH3/
-INH3_S7_L003_R1_001.fastq.gz  INH3_S7_L003_R2_001.fastq.gz
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ls
-1.limma_Probe1vsComp.xls  fastq  gmt  INH1  INH2  INH3  LayerGenes_41586_2017_BFnature21065_MOESM62_ESM.csv
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ll
-total 1616
-drwxr-xr-x 3 chenjunhui scRNA    4096 Apr 10 02:16 ./
-drwxr-xr-x 9 chenjunhui scRNA    4096 Jul  2 01:57 ../
-lrwxrwxrwx 1 chenjunhui scRNA     121 Mar 17 11:48 1.limma_Probe1vsComp.xls -> /szrmyy/Drwang/scRNA/chenjunhui/P00010_DrLuo_proteome/03.analysisINH_Deconvolution/targetProtein/1.limma_Probe1vsComp.xls
-lrwxrwxrwx 1 chenjunhui scRNA      43 Apr 10 02:15 fastq -> /data01/Rawdata/data/P00017_liver_INH/fastq/
-drwxr-xr-x 2 chenjunhui scRNA    4096 Mar 25 13:19 gmt/
-lrwxrwxrwx 1 chenjunhui scRNA      42 Apr 10 02:15 INH1 -> /data01/Rawdata/data/P00017_liver_INH/INH1/
-lrwxrwxrwx 1 chenjunhui scRNA      42 Apr 10 02:16 INH2 -> /data01/Rawdata/data/P00017_liver_INH/INH2/
-lrwxrwxrwx 1 chenjunhui scRNA      42 Apr 10 02:16 INH3 -> /data01/Rawdata/data/P00017_liver_INH/INH3/
--rw-r--r-- 1 chenjunhui scRNA 1635871 Mar 21 14:21 LayerGenes_41586_2017_BFnature21065_MOESM62_ESM.csv
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ls   /data01/Rawdata/data/P00017_liver_INH/fastq/[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ /data01/Rawdata/data/P00017_liver_INH/fastq/
-Ctr1_S54_L003_R1_001.fastq.gz  Ctr2_S66_L3_R2_001.fastq.gz  Ctr3_S66_L3_R1_001.fastq.gz  Ctr3_S66_L4_R2_001.fastq.gz
-Ctr1_S54_L003_R2_001.fastq.gz  Ctr2_S66_L4_R1_001.fastq.gz  Ctr3_S66_L3_R2_001.fastq.gz
-Ctr2_S66_L3_R1_001.fastq.gz    Ctr2_S66_L4_R2_001.fastq.gz  Ctr3_S66_L4_R1_001.fastq.gz
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ls
-1.limma_Probe1vsComp.xls  fastq  gmt  INH1  INH2  INH3  LayerGenes_41586_2017_BFnature21065_MOESM62_ESM.csv
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data]$ ../
-cd -- ../
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH]$ lksls
-00.data  01.QC  02.analysis  02.analysisUpdate  03.Cellchat  04.RIF_PZF  bin
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH]$ 01.QC/
-cd -- 01.QC/
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ ls
-cellRenger  fastp
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ ls fastp/
-Ctrl1  Ctrl2  Ctrl3  CtrlFastq  INH1  INH2  INH3  pipe.sh
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ ls fastp/CtrlFastqCtrlFastq
-Ctr1_S54_L003_R1_001.fastq.gz  Ctr2_S66_L3_R2_001.fastq.gz  Ctr3_S66_L3_R1_001.fastq.gz  Ctr3_S66_L4_R2_001.fastq.gz
-Ctr1_S54_L003_R2_001.fastq.gz  Ctr2_S66_L4_R1_001.fastq.gz  Ctr3_S66_L3_R2_001.fastq.gz
-Ctr2_S66_L3_R1_001.fastq.gz    Ctr2_S66_L4_R2_001.fastq.gz  Ctr3_S66_L4_R1_001.fastq.gz
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ ls fastp/CtrlFastq
-Ctrl1  Ctrl2  Ctrl3  CtrlFastq  INH1  INH2  INH3  pipe.sh
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ ls fastp/pipe.sh cat 
-ls  /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/INH*/*R1_00*.fastq.gz  |  while read dd; do fq=`basename  $dd "_R1_001.fastq.gz"`;dir=`basename  $dd  "_1.fq.gz" | cut -d "_"  -f 1`; echo  /szrmyy/Drwang/scRNA/chenjunhui/bin/fastp   -i  /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/$dir/${fq}_R1_001.fastq.gz    -I  /szrmyy/Drwang/scRNA/chenjunhui/P00016_liver_Chen/00.data/20231225/$dir/${fq}_R2_001.fastq.gz    -o  ${fq}_R1_001.fastq.gz   -O  ${fq}_R2_001.fastq.gz      -q    15   -u 20   -l  140 >$dir/$dir.sh; done
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ ls
-cellRenger  fastp
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ cellranger 
-cellranger cellranger-7.0.0
-Process 10x Genomics Gene Expression, Feature Barcode, and Immune Profiling data
-
-USAGE:
-    cellranger <SUBCOMMAND>
-
-OPTIONS:
-    -h, --help       Print help information
-    -V, --version    Print version information
-
-SUBCOMMANDS:
-    count               Count gene expression (targeted or whole-transcriptome) and/or feature barcode reads from
-                        a single sample and GEM well
-    multi               Analyze multiplexed data or combined gene expression/immune profiling/feature barcode
-                        data
-    vdj                 Assembles single-cell VDJ receptor sequences from 10x Immune Profiling libraries
-    aggr                Aggregate data from multiple Cell Ranger runs
-    reanalyze           Re-run secondary analysis (dimensionality reduction, clustering, etc)
-    targeted-compare    Analyze targeted enrichment performance by comparing a targeted sample to its cognate
-                        parent WTA sample (used as input for targeted gene expression)
-    targeted-depth      Estimate targeted read depth values (mean reads per cell) for a specified input parent
-                        WTA sample and a target panel CSV file
-    mkvdjref            Prepare a reference for use with CellRanger VDJ
-    mkfastq             Run Illumina demultiplexer on sample sheets that contain 10x-specific sample index sets
-    testrun             Execute the 'count' pipeline on a small test dataset
-    mat2csv             Convert a gene count matrix to CSV format
-    mkref               Prepare a reference for use with 10x analysis software. Requires a GTF and FASTA
-    mkgtf               Filter a GTF file by attribute prior to creating a 10x reference
-    upload              Upload analysis logs to 10x Genomics support
-    sitecheck           Collect linux system configuration information
-    help                Print this message or the help of the given subcommand(s)
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ ;s
--bash: syntax error near unexpected token `;'
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ l;s;sls
-cellRenger  fastp
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC]$ cellRenger/
-cd -- cellRenger/
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger]$ ;s
--bash: syntax error near unexpected token `;'
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger]$ ls
-Clean  Ctr2  CtrlSamples.txt  INH2  nohup.out  runINH.sh    runINH.sh.o  run.sh.e  samples.txt
-Ctr1   Ctr3  INH1             INH3  Report     runINH.sh.e  run.sh       run.sh.o
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger]$ cat  run.sh
-echo  start time `date`:
-for sample in $(less ./CtrlSamples.txt)
-do
-cellranger count --id=$sample   --transcriptome=/public/Database/refdata-gex-mm10-2020-A    --fastqs=/szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data/fastq   --sample=$sample  --nosecondary --localcores=50   --localmem=80
-done
-echo end time `date`:
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger]$ ls  /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data/fastq[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger]$ /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data/fastq
-Ctr1_S54_L003_R1_001.fastq.gz  Ctr2_S66_L3_R2_001.fastq.gz  Ctr3_S66_L3_R1_001.fastq.gz  Ctr3_S66_L4_R2_001.fastq.gz
-Ctr1_S54_L003_R2_001.fastq.gz  Ctr2_S66_L4_R1_001.fastq.gz  Ctr3_S66_L3_R2_001.fastq.gz
-Ctr2_S66_L3_R1_001.fastq.gz    Ctr2_S66_L4_R2_001.fastq.gz  Ctr3_S66_L4_R1_001.fastq.gz
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger]$ ls
-Clean  Ctr2  CtrlSamples.txt  INH2  nohup.out  runINH.sh    runINH.sh.o  run.sh.e  samples.txt
-Ctr1   Ctr3  INH1             INH3  Report     runINH.sh.e  run.sh       run.sh.o
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger]$ cat  runINH.shrunINH.sh
-echo  start time `date`:
-for sample in $(less ./samples.txt)
-do
-cellranger count --id=$sample   --transcriptome=/public/Database/refdata-gex-mm10-2020-A    --fastqs=/szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/00.data   --sample=$sample  --nosecondary --localcores=50   --localmem=80
-done
-echo end time `date`:
-[chenjunhui@ubuntu /szrmyy/Drwang/scRNA/chenjunhui/P00017_liver_INH/01.QC/cellRenger]$ 
